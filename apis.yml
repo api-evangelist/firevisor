@@ -1,7 +1,24 @@
 aid: firevisor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/firevisor.png
 name: FireVisor
-description: FireVisor is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: FireVisor is an AI-based manufacturing analytics platform that helps manufacturers leverage
+  their production data beyond traditional defect detection and process control methods. Founded in 2018
+  and headquartered in Singapore (with a secondary office in Toronto, Canada), FireVisor works toward
+  "self-aware factories powered by artificial intelligence," applying machine learning to manufacturing
+  and industrial-automation data. It is a 500 Global portfolio company. As of this profile the public
+  firevisor.com site returns a 404 from its load balancer and exposes no public API, developer portal,
+  or documentation.
 url: https://raw.githubusercontent.com/api-evangelist/firevisor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Manufacturing
+- Analytics
+- Artificial Intelligence
+- Industrial Automation
+- Defect Detection
+- Machine Learning
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/firevisor-domain-security.yml
 - type: Website
   url: https://firevisor.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/firevisor
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
